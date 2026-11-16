@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kahani</title>
+</head>
+<body>
+  <header>
+    <h1>🌙 Kahani</h1>
+    <p class="tag">Choose-your-path stories, written on your device when it can.</p>
+    <div class="status"><span id="device">Checking on-device AI…</span> <button id="enable" hidden>Enable on-device AI</button></div>
+  </header>
+  <main>
+    <form id="start">
+      <label>Story idea <textarea id="premise" required rows="2" placeholder="A shy girl in Mumbai finds a kite that can talk"></textarea></label>
+      <div class="row">
+        <label>Style
+          <select id="style"><option>anime adventure</option><option>gentle bedtime</option><option>mystery</option><option>funny</option><option>mythology</option></select>
+        </label>
+        <label>Age
+          <select id="age"><option>6-8</option><option selected>9-12</option><option>13+</option></select>
+        </label>
+        <button type="submit">Begin</button>
+      </div>
+    </form>
+    <section id="library" hidden><h2>My stories</h2><ul></ul></section>
+    <section id="scenes"></section>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
